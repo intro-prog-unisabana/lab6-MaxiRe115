@@ -15,7 +15,5 @@ def add_student(student_grades):
     student_grades[name]= nuevo
     print(f"Student {name} successfully added to the grades management system.")
     return student_grades
-student_data = {}
-updated_data = add_student(student_data)
-        
+
 
