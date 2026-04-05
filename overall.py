@@ -25,5 +25,6 @@ def assignment_averages(my_dict):
             c[tarea] = c.get(tarea, 0) + 1
     p= {}
     for tarea in t:
-        p[tarea] = round(t[tarea] / c[tarea], 2 )
-
+        p[tarea] = round(t[tarea] / c[tarea])
+    return p
+print(assignment_averages(my_dict))
