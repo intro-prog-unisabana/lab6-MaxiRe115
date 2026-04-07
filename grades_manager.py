@@ -15,5 +15,18 @@ def add_student(student_grades):
     student_grades[name]= nuevo
     print(f"Student {name} successfully added to the grades management system.")
     return student_grades
-
+def get_students(student_grades, keys):
+    result= {}
+    lresult = {}
+    for name in student_grades:
+        lname = name.lower()
+        lresult[lname] = name
+    for key in keys:
+        lkey= key.lower()
+    if lkey in lresult:
+        nombreo = lresult[lkey]
+        result = [nombreo.title()] = student_grades[nombreo]
+    else:
+        print(f"{key.tittle()} not found!")
+    return result
 
