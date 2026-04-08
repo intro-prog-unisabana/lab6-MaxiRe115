@@ -29,11 +29,11 @@ def get_students(student_grades, keys):
         else:
             print(f"{key.title()} not found!")
     return result
-def avg_by_student(student_grades, keys):
+def avg_by_student(student_grades, keys=None):
     if keys is None:
         sele= student_grades
     else:
-        sele = get_students(student_grades, keys= None)
+        sele = get_students(student_grades, keys)
     for student, materia in sele.items():    
         if materia:
             promedio = sum(materia.values()) / len(materia)
