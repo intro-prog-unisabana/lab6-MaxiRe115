@@ -33,7 +33,7 @@ def avg_by_student(student_grades, keys):
     if keys is None:
         sele= student_grades
     else:
-        sele = get_students(student_grades, keys)
+        sele = get_students(student_grades, keys= None)
     for student, materia in sele.items():    
         if materia:
             promedio = sum(materia.values()) / len(materia)
