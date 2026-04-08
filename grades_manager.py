@@ -25,8 +25,8 @@ def get_students(student_grades, keys):
         lkey= key.lower()
         if lkey in lresult:
             nombreo = lresult[lkey]
-            result = [nombreo.title()] = student_grades[nombreo]
+            result[nombreo.title()] = student_grades[nombreo]
         else:
-            print(f"{key.tittle()} not found!")
+            print(f"{key.title()} not found!")
     return result
 
